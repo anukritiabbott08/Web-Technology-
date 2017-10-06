@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title>Anukriti Abbott | Data Analyst | anukriti.abbott@gmail.com</title>	
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" media="all" />
+		<script src="javascript/jquery-1.12.4.js"></script>
+		<script src="javascript/jquery-ui.js"></script>
+		<link rel="stylesheet" href="CSS/jquery-ui.css">
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-96322912-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	
+	<body background="img/background.jpg">
+		<script src="javascript/myjs.js"></script>
+		<div class="tabcontent" style="background-color: #4863A0;" >
+			<button class="tablink" id="home">Home</button>
+			<button class="tablink" id="resume">Resume</button>
+			<button class="tablink" id="contact">Contact Me</button>
+		</div> 
+		<div class="content">
+			<div class="content-header" id="home">
+				<h1>Anukriti Abbott</h1>
+				<h3 style>Anukriti Abbott  || <a href="mailto:anukriti.abbott@gmail.com">anukriti.abbott@gmail.com</a> || (845) - 249 - 9106</h3>
+				<div style="width: 10%">
+				<button id="myBtn"style="background-color: #4863A0; border:none;color: white;padding: 15px 32px;width: max-content;">Download Resume</button>
+				</div>
+				<h2 class="h2--header">Data Analyst</h2>
+			</div>
+			<div class="content-body">
+				<h2 class="h2-main-header">Profile</h2> I am graduate student of Marist College, Poughkeepsie, N.Y. Currently persuing Masters in Information Systems (Business Analytics). 
+			</div>
+			<div class="content-body">
+				<div class="inline">
+					<h2 class="h2-main-header" id="Skills">Skills</h2>
+					<h3 class="h2-header"> Technical</h3>
+					<ul>
+						<li>Oracle 11g</li>
+						<li>Data Warehouse</li>
+						<li>SQL – PLSQL</li>
+						<li>Unix Shell scripting</li>
+						<li>Teradata</li>
+						<li>Basics of R Programming</li> 
+					</ul>
+				</div>
+				<div class="inline">
+					<h3 class="h2-header">Analytical</h3>
+					<ul>
+						<li>System & Business Analysis</li>
+						<li>Requirements Gathering</li>
+						<li>Process Modeling</li>
+						<li>Requirements Gathering</li>
+						<li>SAP Business Objects XI 4.x</li>
+					</ul>
+				</div>
+				<div class="inline">
+					<h3 class="h2-header"> Other</h3>
+					<ul>
+						<li>VISIO </li>
+						<li>HPSC</li>
+						<li>Share Point</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<div class="content-body">
+				<h2 class="h2-main-header" id="Experience">Experience</h2>
+				
+				<b>Accenture Services Pvt. Ltd</b> - Application Developer Senior Analyst - Feb 2013 - Dec 2016
+				<ul>
+						<li>By using complex datasets of a US, Europe and Great Britain based clients, generated multiple reports and analytics for order, supply and retails management and many more which helped the client to monitor the growth 
+						and areas of improvement effectively </li>
+						<li>Designed and developed end-to-end ETL components on client propriety ETL engine. Also, designed and generated the reports and dashboards for the end users using SAP BusinessObjects and QlikView.</li>
+						<li>Gathered requirements using elicitation process with business clients and supported key projects and technology initiatives by providing technical solutions and effort estimation to the business users.</li>
+						<li>Prepared detailed UAT along with functional, technical and business requirement documentation for the applications.</li>
+						<li>Support and enhancement of ETL, data warehousing application and entire reporting solution based on Oracle, IBM DataStage, PLSQL, shell scripting, SAP Business Objects.</li>
+						<li>Proactively analyzed the data for variety of issues with vendor teams.</li>
+						<li>Successfully completed and documented knowledge transfer session between development and support teams.</li>
+					</ul>
+			</div>
+			
+			<div class="content-body">
+				<h2 class="h2-main-header" id="Education">Education</h2>
+				<ul>
+					<li><b>Master of Science in Information Systems (May 2018)</b>
+					Marist College, Poughkeepsie, NY 12601 USA</li>
+					<li><b>Bachelor of Technology, Computer Science and Engineering (May 2013)</b>
+					Jaypee University of Engineering and Technology, Guna, India</li>
+				</ul>
+			</div>
+		<div id="myModal" class="modal">
+		  <div class="modal-content" style="height:50%">
+			<span class="close">&times;</span>
+			<span >I'm not a  robot</span>
+			<div class="box">
+				<div>               
+					<div id="droppable">Drop here to download my resume</div>
+					<div id="draggable">Drag me</div>
+					<iframe id="my_iframe" style="display:none;"></iframe>
+					<script>
+						$("#draggable").draggable();
+						$("#droppable").droppable({
+							drop: function() {
+								window.location.href = 'Resume_AnukritiAbbott.pdf';
+							}
+						});
+					</script>
+				</div>
+			</div>
+		  </div>
+		</div>
+		
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>			
+	</body>
+</html>
