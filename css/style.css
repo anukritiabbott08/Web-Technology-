@@ -1,42 +1,5 @@
 body {font-family: "Lato", sans-serif;}
-
-.tablink {
-	background-color: #4863A0;
-	color: white;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 25px;
-	font-size: 17px;
-	width: 31%;
-	margin-left: 1.5%;
-}
-
-.tablink:hover {
-	background-color: #98AFC7;
-}
-
-  #draggable {
-    width: 10%;
-    height: 70px;
-    background: #ccc;
-    padding-left: 2%;
-    top:30%;
-    left:10%;
-	color: red;
-  }
-  #droppable {
-    position: absolute;
-    left: 250px;
-    top: 0;
-    width: 30%;
-    height: 30%;
-    background: #999;
-    color: red;
-    padding: 10px;
-    top:25%;
-  }
-  
+ 
 .modal {
     display: none;
     position: fixed;
