@@ -49,34 +49,4 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
-	/* When the user clicks submit form, validate the email-id  */
-	var contactForm = document.getElementById("contactForm");
-	 if (contactForm !== null) { /*Check the variable is not null so it doesn't show an error in console for other pages */
-		contactForm.onsubmit = function() {
-			var x = document.forms["myForm"]["email"].value;
-			var atpos = x.indexOf("@");
-			var dotpos = x.lastIndexOf(".");
-			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-				alert("Please enter a valid e-mail address");
-				return false;
-			}
-			
-			var y = document.forms["myForm"]["reason"].value;
-			if(y == 'Select reason'){
-				alert("Please select the Reason of Contact")
-				return false;
-			}
-		};
-	}
-	
-	/* To load the content json */
-	window.onload = function() {
-    var $select = $('#reasonOfContact');
-		$.getJSON("javascript/reason.json", function(data) {
-			for(var i=0; i<data['reasonOfContact'].length;i++){
-				$select.append('<option id="'+ data['reasonOfContact'][i]['id']+'">'+ data['reasonOfContact'][i]['name']+'</option>' );
-			}
-		});
-	}
 });

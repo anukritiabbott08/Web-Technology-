@@ -6,11 +6,27 @@
 		<script src="javascript/jquery-1.12.4.js"></script>
 		<script src="javascript/jquery-ui.js"></script>
 		<link rel="stylesheet" href="CSS/jquery-ui.css">
+		<!-- Piwik -->
+		<script type="text/javascript">
+		  var _paq = _paq || [];
+		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+			var u="//anukritiabbott.innocraft.cloud/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '1']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<!-- End Piwik Code -->		
+	</head>
 	<body background="img/background.jpg">
 		<script src="javascript/myjs.js"></script>
 		<div class="tabcontent">
 			<button class="tablink" id="home">Home</button>
-			<button class="tablink" id="resume" style="background-color:#98AFC7;">Resume</button>
+			<button class="tablink" id="resume">Resume</button>
 			<button class="tablink" id="contact">Contact Me</button>
 		</div> 
 		<div class="content">
@@ -18,7 +34,7 @@
 				<h1>Anukriti Abbott</h1>
 				<h3 style>Anukriti Abbott  || <a href="mailto:anukriti.abbott@gmail.com">anukriti.abbott@gmail.com</a> || (845) - 249 - 9106</h3>
 				<div style="width: 10%">
-				<button id="download" style="background-color: #4863A0; border:none;color: white;padding: 15px 32px;width: max-content;">Download Resume</button>
+				<button id="download"style="background-color: #4863A0; border:none;color: white;padding: 15px 32px;width: max-content;">Download Resume</button>
 				</div>
 				<h2 class="h2--header">Data Analyst</h2>
 			</div>
