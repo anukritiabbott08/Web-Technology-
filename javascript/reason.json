@@ -1,0 +1,20 @@
+{
+	"reasonOfContact":[
+		{
+			"id":0,
+			"name":"Select reason"
+		},
+		{
+			"id":1,
+			"name":"Job offer"
+		},
+		{
+			"id":2,
+			"name":"Mentoring"
+		},
+		{
+			"id":3,
+			"name":"Other"
+		} 
+	]
+}
