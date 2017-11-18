@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+Storages.localStorage
+
 	/*Function to open index page on home tab*/
 	$( "#home" ).click(function() {
 		document.location.href="index.html";

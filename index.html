@@ -25,6 +25,34 @@
 		</script>
 		<!-- End Piwik Code -->		
 		
+		<!-- JS for cookies -->
+		<script language="JavaScript">
+			cookie_name = "Basic_Cookie";
+			function write_cookie() {
+				if(document.cookie) {
+				index = document.cookie.indexOf(cookie_name);
+			} else {
+				index = -1;
+			}
+
+			if (index == -1) {
+				document.cookie=cookie_name+"=1; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
+			} else {
+				countbegin = (document.cookie.indexOf("=", index) + 1);
+				countend = document.cookie.indexOf(";", index);
+			if (countend == -1) {
+				countend = document.cookie.length;
+			}
+				count = eval(document.cookie.substring(countbegin, countend)) + 1;
+				document.cookie=cookie_name+"="+count+"; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
+			}
+			}
+		</script>
+		
+		<!-- End of JS for cookies -->
+		
+		
+		
 	</head>
 	<body background="img/background.jpg">
 		<script src="javascript/myjs.js"></script>
