@@ -1,0 +1,3 @@
+16. How much of a performance increase were you able to gain by taking these simple
+actions?
+Ans: Performance increase was from 73 to 86 in Google insight score.
